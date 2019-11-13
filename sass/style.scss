@@ -82,6 +82,8 @@ select {
   }
 }
 
+.btn-light { color: $color-primary; }
+
 .btn-danger {
   color: white;
   background-color: $color-danger;
@@ -142,11 +144,8 @@ footer {
   border-bottom: 1px solid $color-border;
   padding-top: 12px;
   padding-bottom: 12px;
-  height: 106px;
 
   .navbar-brand { display: inline-flex; }
-
-  .img-brand { transform: translateY(-3px); }
 }
 
 .navbar-nav { flex-direction: row; }
@@ -219,7 +218,7 @@ footer {
     padding: 0;
     border-radius: 12px;
     background-color: white;
-    box-shadow: 0 3px 5px $color-shadow;
+    box-shadow: 0 2px 5px $color-shadow;
   }
 
   .flight-info-group {
@@ -291,7 +290,7 @@ footer {
         display: block;
         margin-top: -8px;
         transform: rotate(90deg);
-        content: “ ”;
+        content: '';
         font-size: 16px;
         color: $color-primary;
       }
@@ -382,6 +381,7 @@ footer {
 
   .flight-name {
     margin-bottom: 24px;
+    @include h5;
     text-align: center;
 
     i { vertical-align: middle; }
@@ -431,17 +431,8 @@ footer {
     .flight-price { text-decoration: line-through; }
   }
 
-  .btn-block +.btn-block { margin-top: 4px; }
-
-  @media(max-width: 767.98px) {
+  @media(max-width: 768px) {
     .flight-info-group { padding: 24px; }
-
-    .btn-refund {
-      display: inline;
-      width: auto;
-    }
-
-    .btn-refund + .btn-refund { margin-top: 0; }
   }
 
   @media(max-width: 575.98px) {
@@ -465,6 +456,29 @@ footer {
   h6 {
     line-height: 1.4;
     font-weight: 400;
+  }
+}
+
+.container-sign { max-width: 400px; }
+
+.form-sign {
+  margin: 80px 0;
+  padding: 16px;
+
+  .form-headline {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+
+  .txt-terms {
+    margin-top: 56px;
+    text-align: center;
+    font-size: 14px;
+    color: $color-text—secondary;
+
+    a { color: $color-text—primary; }
   }
 }
 

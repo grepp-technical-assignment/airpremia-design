@@ -38,6 +38,9 @@ select {
   .btn-primary:focus, .btn-primary:active {
     box-shadow: 0 0 0 0.2rem #3e81f6 !important; }
 
+.btn-light {
+  color: #20274F; }
+
 .btn-danger {
   color: white;
   background-color: #ff6e46;
@@ -82,12 +85,9 @@ footer {
   background-color: white;
   border-bottom: 1px solid #e7e7e7;
   padding-top: 12px;
-  padding-bottom: 12px;
-  height: 106px; }
+  padding-bottom: 12px; }
   .nav-global .navbar-brand {
     display: inline-flex; }
-  .nav-global .img-brand {
-    transform: translateY(-3px); }
 
 .navbar-nav {
   flex-direction: row; }
@@ -152,7 +152,7 @@ footer {
     padding: 0;
     border-radius: 12px;
     background-color: white;
-    box-shadow: 0 3px 5px rgba(20, 20, 50, 0.12); }
+    box-shadow: 0 2px 5px rgba(20, 20, 50, 0.12); }
   .container-flight .flight-info-group,
   .container-reservation .flight-info-group {
     margin: auto;
@@ -231,7 +231,7 @@ footer {
         display: block;
         margin-top: -8px;
         transform: rotate(90deg);
-        content: “ ”;
+        content: '';
         font-size: 16px;
         color: #20274F; }
     .container-flight .bar-flight .flight-time,
@@ -337,6 +337,8 @@ footer {
   margin-bottom: 12px; }
 .container-reservation .flight-name {
   margin-bottom: 24px;
+  font-size: 20px;
+  line-height: 1.6;
   text-align: center; }
   .container-reservation .flight-name i {
     vertical-align: middle; }
@@ -375,16 +377,9 @@ footer {
     pointer-events: none; }
   .container-reservation .refund .flight-price {
     text-decoration: line-through; }
-.container-reservation .btn-block + .btn-block {
-  margin-top: 4px; }
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   .container-reservation .flight-info-group {
-    padding: 24px; }
-  .container-reservation .btn-refund {
-    display: inline;
-    width: auto; }
-  .container-reservation .btn-refund + .btn-refund {
-    margin-top: 0; } }
+    padding: 24px; } }
 @media (max-width: 575.98px) {
   .container-reservation .complete:before, .container-reservation .refund:before {
     justify-content: center; } }
@@ -401,6 +396,25 @@ footer {
   .txt-error h6 {
     line-height: 1.4;
     font-weight: 400; }
+
+.container-sign {
+  max-width: 400px; }
+
+.form-sign {
+  margin: 80px 0;
+  padding: 16px; }
+  .form-sign .form-headline {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px; }
+  .form-sign .txt-terms {
+    margin-top: 56px;
+    text-align: center;
+    font-size: 14px;
+    color: #9a9a9a; }
+    .form-sign .txt-terms a {
+      color: #363636; }
 
 .bootstrap-datetimepicker-widget {
   width: auto !important; }
