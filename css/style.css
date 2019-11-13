@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body {
   height: 100%; }
 
@@ -9,7 +10,7 @@ body {
 
 .container {
   flex: 1 0 auto; }
-  @media (max-width: 992px) and (min-width: 576px) {
+  @media (max-width: 991.98px) and (min-width: 576px) {
     .container {
       max-width: 100%; } }
 
@@ -56,12 +57,6 @@ select {
     font-size: 13px;
     margin-bottom: 2px; }
 
-.form-control::-webkit-input-placeholder {
-  /* Edge */
-  color: #CDD7E0; }
-.form-control:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: #CDD7E0; }
 .form-control::placeholder {
   color: #CDD7E0; }
 
@@ -73,7 +68,6 @@ select {
   border-color: #e7e7e7; }
 
 footer {
-  margin-top: 80px;
   padding: 64px 0;
   width: 100%;
   font-size: 13px;
@@ -128,201 +122,262 @@ footer {
   line-height: 1.2;
   color: #363636; }
 
-.container-flight .container-header,
-.container-reservation .container-header {
-  margin-top: 56px;
-  font-size: 26px;
-  line-height: 1.2;
-  line-height: 1.4;
-  color: #363636; }
-.container-flight .list-flight,
-.container-reservation .list-flight {
-  margin: 16px 0 0 0;
-  padding-left: 0;
-  list-style: none; }
-  .container-flight .list-flight li + li,
-  .container-reservation .list-flight li + li {
-    margin-top: 24px; }
-.container-flight .list-flight-item,
-.container-reservation .list-flight-item {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  border-radius: 8px;
-  border: 1px solid #e7e7e7; }
-.container-flight .flight-info-group,
-.container-reservation .flight-info-group {
-  margin: auto;
-  padding: 32px 64px;
-  border-right: 1px solid #e7e7e7; }
-.container-flight .price-info-group,
-.container-reservation .price-info-group {
-  margin: auto;
-  text-align: center; }
-.container-flight .row-departure-flight,
-.container-flight .row-arrival-flight,
-.container-flight .timeline-flight,
-.container-reservation .row-departure-flight,
-.container-reservation .row-arrival-flight,
-.container-reservation .timeline-flight {
-  display: flex; }
-.container-flight .row-departure-flight,
-.container-reservation .row-departure-flight {
-  margin-bottom: 24px; }
-.container-flight .timeline-flight,
-.container-reservation .timeline-flight {
-  width: 100%; }
-.container-flight .departure-time,
-.container-flight .arrival-time,
-.container-reservation .departure-time,
-.container-reservation .arrival-time {
-  display: flex;
-  flex-direction: column; }
-  .container-flight .departure-time time,
-  .container-flight .arrival-time time,
-  .container-reservation .departure-time time,
-  .container-reservation .arrival-time time {
-    min-width: 80px;
-    font-weight: 600;
+.container-flight,
+.container-reservation {
+  padding-bottom: 80px;
+  background-color: #FBFBFD; }
+  .container-flight .list-flight-title,
+  .container-reservation .list-flight-title {
+    margin-top: 56px;
+    font-size: 26px;
+    line-height: 1.2;
+    line-height: 1.4;
     color: #363636; }
-  .container-flight .departure-time .departure-location,
-  .container-flight .arrival-time .departure-location,
-  .container-reservation .departure-time .departure-location,
-  .container-reservation .arrival-time .departure-location {
-    margin-bottom: 0;
-    font-size: 13px;
-    line-height: 1.6;
-    font-weight: 300;
-    color: #363636; }
-.container-flight .departure-time,
-.container-reservation .departure-time {
-  text-align: right; }
-.container-flight .arrival-time,
-.container-reservation .arrival-time {
-  text-align: left; }
-.container-flight .bar-flight,
-.container-reservation .bar-flight {
-  position: relative;
-  display: block;
-  height: 2px;
-  margin: 16px;
-  width: 80%;
-  padding: 0;
-  line-height: 0;
-  text-align: center;
-  background-color: #e7e7e7;
-  border-radius: 4px; }
-  .container-flight .bar-flight .bar-flight-point,
-  .container-reservation .bar-flight .bar-flight-point {
-    position: inherit;
-    top: -2px;
-    display: inline-block;
-    width: 6px;
-    height: 6px; }
-    .container-flight .bar-flight .bar-flight-point i,
-    .container-reservation .bar-flight .bar-flight-point i {
-      position: absolute;
-      top: 50%;
-      right: 0;
-      display: block;
-      margin-top: -8px;
-      transform: rotate(90deg);
-      content: "";
+    .container-flight .list-flight-title i,
+    .container-reservation .list-flight-title i {
+      vertical-align: middle; }
+  .container-flight .list-flight,
+  .container-reservation .list-flight {
+    margin: 16px 0 0 0;
+    padding-left: 0;
+    list-style: none; }
+    .container-flight .list-flight li + li,
+    .container-reservation .list-flight li + li {
+      margin-top: 24px; }
+  .container-flight .list-flight-item,
+  .container-reservation .list-flight-item {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 3px 5px rgba(20, 20, 50, 0.12); }
+  .container-flight .flight-info-group,
+  .container-reservation .flight-info-group {
+    margin: auto;
+    padding: 32px 64px;
+    border-right: 4px dashed #e7e7e7; }
+  .container-flight .price-info-group,
+  .container-reservation .price-info-group {
+    margin: auto;
+    text-align: center; }
+  .container-flight .row-departure-flight,
+  .container-flight .row-arrival-flight,
+  .container-flight .timeline-flight,
+  .container-reservation .row-departure-flight,
+  .container-reservation .row-arrival-flight,
+  .container-reservation .timeline-flight {
+    display: flex; }
+  .container-flight .row-departure-flight,
+  .container-reservation .row-departure-flight {
+    margin-bottom: 24px; }
+  .container-flight .timeline-flight,
+  .container-reservation .timeline-flight {
+    width: 100%; }
+  .container-flight .departure-time,
+  .container-flight .arrival-time,
+  .container-reservation .departure-time,
+  .container-reservation .arrival-time {
+    display: flex;
+    flex-direction: column; }
+    .container-flight .departure-time time,
+    .container-flight .arrival-time time,
+    .container-reservation .departure-time time,
+    .container-reservation .arrival-time time {
+      min-width: 100px;
+      font-weight: 600;
+      font-size: 20px;
+      color: #363636; }
+    .container-flight .departure-time .departure-location,
+    .container-flight .arrival-time .departure-location,
+    .container-reservation .departure-time .departure-location,
+    .container-reservation .arrival-time .departure-location {
+      margin-bottom: 0;
       font-size: 16px;
-      color: #20274F; }
-  .container-flight .bar-flight .flight-time,
-  .container-reservation .bar-flight .flight-time {
-    margin-top: 4px;
+      line-height: 1.6;
+      font-weight: 300;
+      color: #363636; }
+  .container-flight .departure-time,
+  .container-reservation .departure-time {
+    text-align: right; }
+  .container-flight .arrival-time,
+  .container-reservation .arrival-time {
+    text-align: left; }
+  .container-flight .bar-flight,
+  .container-reservation .bar-flight {
+    position: relative;
+    display: block;
+    height: 2px;
+    margin: 16px;
+    width: 80%;
+    padding: 0;
+    line-height: 0;
+    text-align: center;
+    background-color: #e7e7e7;
+    border-radius: 4px; }
+    .container-flight .bar-flight .bar-flight-point,
+    .container-reservation .bar-flight .bar-flight-point {
+      position: inherit;
+      top: -2px;
+      display: inline-block;
+      width: 6px;
+      height: 6px; }
+      .container-flight .bar-flight .bar-flight-point i,
+      .container-reservation .bar-flight .bar-flight-point i {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        display: block;
+        margin-top: -8px;
+        transform: rotate(90deg);
+        content: “ ”;
+        font-size: 16px;
+        color: #20274F; }
+    .container-flight .bar-flight .flight-time,
+    .container-reservation .bar-flight .flight-time {
+      margin-top: 4px;
+      font-size: 13px;
+      line-height: 1.6;
+      color: #9a9a9a;
+      list-style: none; }
+  .container-flight .remaining-seat,
+  .container-reservation .remaining-seat {
+    margin: auto auto auto 24px;
+    width: 96px;
+    text-align: center;
+    font-size: 0; }
+    .container-flight .remaining-seat i, .container-flight .remaining-seat .remaining-seat-number,
+    .container-reservation .remaining-seat i,
+    .container-reservation .remaining-seat .remaining-seat-number {
+      color: #9a9a9a; }
+    .container-flight .remaining-seat i,
+    .container-reservation .remaining-seat i {
+      font-size: 24px; }
+    .container-flight .remaining-seat .remaining-seat-number,
+    .container-reservation .remaining-seat .remaining-seat-number {
+      margin: 0;
+      width: 100px;
+      font-size: 13px;
+      line-height: 1.6;
+      color: #9a9a9a; }
+  .container-flight .total-traveller,
+  .container-flight .total-flight-price,
+  .container-flight .noti-refund-message,
+  .container-reservation .total-traveller,
+  .container-reservation .total-flight-price,
+  .container-reservation .noti-refund-message {
     font-size: 13px;
     line-height: 1.6;
     color: #9a9a9a;
-    list-style: none; }
-.container-flight .remaining-seat,
-.container-reservation .remaining-seat {
-  margin: auto auto auto 56px;
-  width: 96px;
-  text-align: center;
-  font-size: 0; }
-  .container-flight .remaining-seat i, .container-flight .remaining-seat .remaining-seat-number,
-  .container-reservation .remaining-seat i,
-  .container-reservation .remaining-seat .remaining-seat-number {
-    color: #9a9a9a; }
-  .container-flight .remaining-seat i,
-  .container-reservation .remaining-seat i {
-    font-size: 24px; }
-  .container-flight .remaining-seat .remaining-seat-number,
-  .container-reservation .remaining-seat .remaining-seat-number {
-    margin: 0;
-    width: 100px;
-    font-size: 13px;
-    line-height: 1.6;
-    color: #9a9a9a; }
-.container-flight .total-traveller,
-.container-flight .total-flight-price,
-.container-flight .noti-refund-message,
-.container-reservation .total-traveller,
-.container-reservation .total-flight-price,
-.container-reservation .noti-refund-message {
-  font-size: 13px;
-  line-height: 1.6;
-  color: #9a9a9a;
-  font-weight: 400; }
-.container-flight .total-traveller,
-.container-flight .flight-price,
-.container-reservation .total-traveller,
-.container-reservation .flight-price {
-  margin-bottom: 0; }
-.container-flight .total-flight-price,
-.container-reservation .total-flight-price {
-  margin-bottom: 16px; }
-.container-flight .noti-refund-message,
-.container-reservation .noti-refund-message {
-  margin-top: 4px; }
-@media (max-width: 992px) {
-  .container-flight .flight-info-group,
-  .container-flight .price-info-group,
-  .container-reservation .flight-info-group,
-  .container-reservation .price-info-group {
-    padding: 24px; }
-  .container-flight .remaining-seat,
-  .container-reservation .remaining-seat {
-    margin: auto auto auto 8px; } }
-@media (max-width: 768px) {
-  .container-flight .flight-info-group,
-  .container-reservation .flight-info-group {
-    border-right: none; }
-  .container-flight .price-info-group,
-  .container-reservation .price-info-group {
-    padding: 24px 24px 32px;
-    border-top: 1px solid #e7e7e7; } }
-@media (max-width: 575px) {
-  .container-flight .list-flight-item,
-  .container-reservation .list-flight-item {
-    flex-direction: column; }
-  .container-flight .remaining-seat,
-  .container-reservation .remaining-seat {
-    display: none; } }
+    font-weight: 400; }
+  .container-flight .total-traveller,
+  .container-flight .flight-price,
+  .container-reservation .total-traveller,
+  .container-reservation .flight-price {
+    margin-bottom: 0; }
+  .container-flight .total-flight-price,
+  .container-reservation .total-flight-price {
+    margin-bottom: 16px; }
+  .container-flight .noti-refund-message,
+  .container-reservation .noti-refund-message {
+    margin-top: 4px; }
+  @media (max-width: 991.98px) {
+    .container-flight .flight-info-group,
+    .container-flight .price-info-group,
+    .container-reservation .flight-info-group,
+    .container-reservation .price-info-group {
+      padding: 24px; }
+    .container-flight .remaining-seat,
+    .container-reservation .remaining-seat {
+      margin: auto auto auto 8px; } }
+  @media (max-width: 767.98px) {
+    .container-flight .flight-info-group,
+    .container-reservation .flight-info-group {
+      border-right: none; }
+    .container-flight .price-info-group,
+    .container-reservation .price-info-group {
+      padding: 24px 24px 32px;
+      border-top: 4px dashed #e7e7e7; } }
+  @media (max-width: 575.98px) {
+    .container-flight .list-flight-title,
+    .container-reservation .list-flight-title {
+      font-size: 20px;
+      line-height: 1.6;
+      text-align: center; }
+    .container-flight .departure-time,
+    .container-flight .arrival-time,
+    .container-reservation .departure-time,
+    .container-reservation .arrival-time {
+      display: flex;
+      flex-direction: column; }
+      .container-flight .departure-time time,
+      .container-flight .arrival-time time,
+      .container-reservation .departure-time time,
+      .container-reservation .arrival-time time {
+        min-width: 80px;
+        font-size: 16px;
+        line-height: 1.6; }
+      .container-flight .departure-time .departure-location,
+      .container-flight .arrival-time .departure-location,
+      .container-reservation .departure-time .departure-location,
+      .container-reservation .arrival-time .departure-location {
+        font-size: 13px;
+        line-height: 1.6; }
+    .container-flight .list-flight-item,
+    .container-reservation .list-flight-item {
+      flex-direction: column; }
+    .container-flight .remaining-seat,
+    .container-reservation .remaining-seat {
+      display: none; } }
 
 .container-reservation .flight-info-group {
-  padding: 32px 128px 48px; }
+  padding: 24px 128px; }
 .container-reservation .price-info-group .flight-price {
   margin-bottom: 12px; }
 .container-reservation .flight-name {
   margin-bottom: 24px;
   text-align: center; }
-.container-reservation .disabled {
-  opacity: .3;
+  .container-reservation .flight-name i {
+    vertical-align: middle; }
+.container-reservation .complete {
+  border: 4px solid #d7e2eb;
+  border-radius: 16px; }
+  .container-reservation .complete:before {
+    position: relative;
+    font-family: 'Material Icons';
+    content: 'check 결제가 완료되었습니다.';
+    display: flex;
+    flex: 0 0 100%;
+    padding: 8px 24px;
+    font-weight: 600;
+    background-color: #d7e2eb;
+    color: #363636;
+    border-radius: 6px 6px 0 0; }
+.container-reservation .refund {
+  border: 4px solid #d7e2eb;
+  border-radius: 16px;
   background-color: #FBFBFD;
-  border: 1px solid #acacac; }
-  .container-reservation .disabled .btn {
+  opacity: .3; }
+  .container-reservation .refund:before {
+    position: relative;
+    font-family: 'Material Icons';
+    content: 'check 환불이 완료되었습니다.';
+    display: flex;
+    flex: 0 0 100%;
+    padding: 8px 24px;
+    font-weight: 600;
+    background-color: #d7e2eb;
+    color: #363636;
+    border-radius: 6px 6px 0 0; }
+  .container-reservation .refund .btn {
     cursor: not-allowed;
     pointer-events: none; }
-  .container-reservation .disabled .flight-price {
+  .container-reservation .refund .flight-price {
     text-decoration: line-through; }
 .container-reservation .btn-block + .btn-block {
   margin-top: 4px; }
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
   .container-reservation .flight-info-group {
     padding: 24px; }
   .container-reservation .btn-refund {
@@ -330,6 +385,9 @@ footer {
     width: auto; }
   .container-reservation .btn-refund + .btn-refund {
     margin-top: 0; } }
+@media (max-width: 575.98px) {
+  .container-reservation .complete:before, .container-reservation .refund:before {
+    justify-content: center; } }
 
 .container-empty {
   display: flex;

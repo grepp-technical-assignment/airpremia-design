@@ -1,22 +1,33 @@
 $color-danger: #ff6e46;
-$color-danger--darker : #d7461d;
+$color-danger—darker : #d7461d;
 $color-primary: #20274F;
-$color-primary--darker: #323b70;
-$color-primary--brighter: #3e81f6;
+$color-primary—darker: #323b70;
+$color-primary—brighter: #3e81f6;
 $color-border: #e7e7e7;
-$color-text--primary: #363636;
-$color-text--primary--hover: rgba(73, 73, 73, 0.5);
-$color-text--secondary: #9a9a9a;
-$color-text--disabled: #CDD7E0;
+$color-text—primary: #363636;
+$color-text—primary—hover: rgba(73, 73, 73, 0.5);
+$color-text—secondary: #9a9a9a;
+$color-text—disabled: #CDD7E0;
 $color-background: #FBFBFD;
-$color-background--footer: #002554;
+$color-shadow: rgba(20,20,50,.12);
+$color-background—footer: #002554;
 
 @mixin h4 {
   font-size: 26px;
   line-height: 1.2;
 }
 
+@mixin h5 {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
 @mixin h6 {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+@mixin h7 {
   font-size: 13px;
   line-height: 1.6;
 }
@@ -33,7 +44,7 @@ body {
 .container {
   flex: 1 0 auto;
 
-  @media (max-width: 992px) and (min-width: 576px) { max-width: 100%; }
+  @media(max-width: 991.98px) and (min-width: 576px) { max-width: 100%; }
 }
 
 .footer { flex-shrink: 0; }
@@ -61,13 +72,13 @@ select {
 
   &:hover,
   &:active {
-    background-color: $color-primary--darker !important;
-    border-color: $color-primary--darker !important;
+    background-color: $color-primary—darker !important;
+    border-color: $color-primary—darker !important;
   }
 
   &:focus,
   &:active {
-    box-shadow: 0 0 0 0.2rem $color-primary--brighter !important;
+    box-shadow: 0 0 0 0.2rem $color-primary—brighter !important;
   }
 }
 
@@ -81,13 +92,13 @@ select {
   &:focus,
   &:active {
     color: white;
-    background-color: $color-danger--darker !important;
-    border-color: $color-danger--darker !important;
+    background-color: $color-danger—darker !important;
+    border-color: $color-danger—darker !important;
   }
 }
 
 .text-muted {
-  color: $color-text--secondary !important;
+  color: $color-text—secondary !important;
 }
 
 .form-group {
@@ -101,16 +112,8 @@ select {
 }
 
 .form-control {
-  &::-webkit-input-placeholder { /* Edge */
-    color: $color-text--disabled;
-  }
-
-  &:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: $color-text--disabled;
-  }
-
   &::placeholder {
-    color: $color-text--disabled;
+    color: $color-text—disabled;
   }
 }
 
@@ -124,12 +127,11 @@ select {
 }
 
 footer {
-  margin-top: 80px;
   padding: 64px 0;
   width: 100%;
-  @include h6;
+  @include h7;
   color: white;
-  background-color: $color-background--footer;
+  background-color: $color-background—footer;
   border-top: 1px solid $color-border;
 
   p { margin-bottom: 0; }
@@ -158,10 +160,10 @@ footer {
     transition: .3s;
     display: inline-flex;
     vertical-align: middle;
-    color: $color-text--primary;
-    @include h6;
+    color: $color-text—primary;
+    @include h7;
 
-    &:hover { color: $color-text--primary--hover; }
+    &:hover { color: $color-text—primary—hover; }
   }
 }
 
@@ -184,17 +186,22 @@ footer {
   i {
     font-size: 20px;
     line-height: 1.2;
-    color: $color-text--primary;
+    color: $color-text—primary;
   }
 }
 
 .container-flight,
 .container-reservation {
-  .container-header {
+  padding-bottom: 80px;
+  background-color: $color-background;
+
+  .list-flight-title {
     margin-top: 56px;
     @include h4;
     line-height: 1.4;
-    color: $color-text--primary;
+    color: $color-text—primary;
+
+    i { vertical-align: middle; }
   }
 
   .list-flight {
@@ -210,14 +217,15 @@ footer {
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
-    border-radius: 8px;
-    border: 1px solid $color-border;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 3px 5px $color-shadow;
   }
 
   .flight-info-group {
     margin: auto;
     padding: 32px 64px;
-    border-right: 1px solid $color-border;
+    border-right: 4px dashed $color-border;
   }
 
   .price-info-group {
@@ -239,16 +247,18 @@ footer {
     flex-direction: column;
 
     time {
-      min-width: 80px;
+      min-width: 100px;
       font-weight: 600;
-      color: $color-text--primary;
+      font-size: 20px;
+      color: $color-text—primary;
     }
 
     .departure-location {
       margin-bottom: 0;
-      @include h6;
+      font-size: 16px;
+      line-height: 1.6;
       font-weight: 300;
-      color: $color-text--primary;
+      color: $color-text—primary;
     }
   }
 
@@ -281,7 +291,7 @@ footer {
         display: block;
         margin-top: -8px;
         transform: rotate(90deg);
-        content: "";
+        content: “ ”;
         font-size: 16px;
         color: $color-primary;
       }
@@ -289,34 +299,34 @@ footer {
 
     .flight-time {
       margin-top: 4px;
-      @include h6;
-      color: $color-text--secondary;
+      @include h7;
+      color: $color-text—secondary;
       list-style: none;
     }
   }
 
   .remaining-seat {
-    margin: auto auto auto 56px;
+    margin: auto auto auto 24px;
     width: 96px;
     text-align: center;
     font-size: 0;
 
-    i, .remaining-seat-number { color: $color-text--secondary; }
+    i, .remaining-seat-number { color: $color-text—secondary; }
     i { font-size: 24px; }
 
     .remaining-seat-number {
       margin: 0;
       width: 100px;
-      @include h6;
-      color: $color-text--secondary;
+      @include h7;
+      color: $color-text—secondary;
     }
   }
 
   .total-traveller,
   .total-flight-price,
   .noti-refund-message {
-    @include h6;
-    color: $color-text--secondary;
+    @include h7;
+    color: $color-text—secondary;
     font-weight: 400;
   }
 
@@ -326,28 +336,46 @@ footer {
   .total-flight-price { margin-bottom: 16px; }
   .noti-refund-message { margin-top: 4px; }
 
-  @media (max-width: 992px) {
+  @media(max-width: 991.98px) {
     .flight-info-group,
     .price-info-group { padding: 24px; }
     .remaining-seat { margin: auto auto auto 8px; }
   }
 
-  @media (max-width: 768px) {
+  @media(max-width: 767.98px) {
     .flight-info-group { border-right: none; }
     .price-info-group {
       padding: 24px 24px 32px;
-      border-top: 1px solid $color-border;
+      border-top: 4px dashed $color-border;
     }
   }
 
-  @media (max-width: 575px) {
+  @media(max-width: 575.98px) {
+    .list-flight-title {
+      @include h5;
+      text-align: center;
+    }
+
+    .departure-time,
+    .arrival-time {
+      display: flex;
+      flex-direction: column;
+
+      time {
+        min-width: 80px;
+        @include h6;
+      }
+
+      .departure-location { @include h7; }
+    }
+
     .list-flight-item { flex-direction: column; }
     .remaining-seat { display: none; }
   }
 }
 
 .container-reservation {
-  .flight-info-group { padding: 32px 128px 48px; }
+  .flight-info-group { padding: 24px 128px; }
   .price-info-group {
     .flight-price { margin-bottom: 12px; }
   }
@@ -355,12 +383,45 @@ footer {
   .flight-name {
     margin-bottom: 24px;
     text-align: center;
+
+    i { vertical-align: middle; }
   }
 
-  .disabled {
-    opacity: .3;
+  .complete {
+    border: 4px solid #d7e2eb;
+    border-radius: 16px;
+
+    &:before {
+      position: relative;
+      font-family: 'Material Icons';
+      content: 'check 결제가 완료되었습니다.';
+      display: flex;
+      flex: 0 0 100%;
+      padding: 8px 24px;
+      font-weight: 600;
+      background-color: #d7e2eb;
+      color: $color-text—primary;
+      border-radius: 6px 6px 0 0;
+    }
+  }
+  .refund {
+    border: 4px solid #d7e2eb;
+    border-radius: 16px;
     background-color: $color-background;
-    border: 1px solid #acacac;
+    opacity: .3;
+
+    &:before {
+      position: relative;
+      font-family: 'Material Icons';
+      content: 'check 환불이 완료되었습니다.';
+      display: flex;
+      flex: 0 0 100%;
+      padding: 8px 24px;
+      font-weight: 600;
+      background-color: #d7e2eb;
+      color: $color-text—primary;
+      border-radius: 6px 6px 0 0;
+    }
 
     .btn {
       cursor: not-allowed;
@@ -372,7 +433,7 @@ footer {
 
   .btn-block +.btn-block { margin-top: 4px; }
 
-  @media (max-width: 768px) {
+  @media(max-width: 767.98px) {
     .flight-info-group { padding: 24px; }
 
     .btn-refund {
@@ -382,12 +443,18 @@ footer {
 
     .btn-refund + .btn-refund { margin-top: 0; }
   }
+
+  @media(max-width: 575.98px) {
+    .complete, .refund {
+      &:before { justify-content: center; }
+    }
+  }
 }
 
 .container-empty {
   display: flex;
   text-align: center;
-  color: $color-text--secondary;
+  color: $color-text—secondary;
 }
 
 .txt-error {
@@ -404,7 +471,8 @@ footer {
 //다른 datepicker 라이브러리를 사용할 경우에 삭제해주세요
 .bootstrap-datetimepicker-widget {
   width: auto !important;
-  table { @include h6; }
+
+  table { @include h7; }
   table th {
     padding: 12px;
     font-weight: 500;
@@ -424,7 +492,7 @@ footer {
   .picker-switch {
     padding: 16px;
     font-weight: 700;
-    color: $color-text--primary;
+    color: $color-text—primary;
   }
 
   .accordion-toggle { display: none; }
@@ -480,7 +548,7 @@ footer {
       padding: 8px 12px;
       vertical-align: inherit;
       font-weight: 400;
-      color: $color-text--secondary;
+      color: $color-text—secondary;
     }
 
     .total-price {
@@ -495,4 +563,5 @@ footer {
 
 .modal-footer {
   padding: 16px 24px 16px 16px;
-  border-top: none; }
+  border-top: none;
+}

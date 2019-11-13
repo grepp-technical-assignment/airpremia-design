@@ -27,343 +27,337 @@
         </ul>
     </div>
 </nav>
-<div class="container container-reservation">
-    <h4 class="container-header text-center">예약 내역</h4>
-    <ul class="list-flight">
-        <li class="list-flight-item disabled">
-            <div class="flight-info-group col-12 col-md-9">
-                <h6 class="flight-name">서울(ICN) -> 뉴욕(NYC)</h6>
-                <div class="row-departure-flight">
-                    <div class="timeline-flight">
-                        <div class="departure-time">
-                            <time datetime="2100-01-01 14:10">오후 02:10</time>
-                            <h6 class="departure-location">ICN</h6>
+<div class="container-reservation">
+    <div class="container">
+        <h4 class="list-flight-title text-center">예약 내역</h4>
+        <ul class="list-flight">
+            <li class="list-flight-item refund">
+                <div class="flight-info-group col-12 col-md-9">
+                    <h6 class="flight-name">인천(ICN) <span><i class="material-icons">swap_horiz</i></span> 뉴욕(NYC)</h6>
+                    <div class="row-departure-flight">
+                        <div class="timeline-flight">
+                            <div class="departure-time">
+                                <time datetime="2100-01-01 14:10">오후 02:10</time>
+                                <h6 class="departure-location">ICN</h6>
+                            </div>
+                            <ul class="bar-flight">
+                                <li class="bar-flight-point">
+                                    <i class="material-icons">flight</i>
+                                </li>
+                                <li class="flight-time">09시간 15분</li>
+                            </ul>
+                            <div class="arrival-time">
+                                <time datetime="2100-01-01 23:25">오후 11:25</time>
+                                <h6 class="departure-location">NYC</h6>
+                            </div>
                         </div>
-                        <ul class="bar-flight">
-                            <li class="bar-flight-point">
-                                <i class="material-icons">flight</i>
-                            </li>
-                            <li class="flight-time">09시간 15분</li>
-                        </ul>
-                        <div class="arrival-time">
-                            <time datetime="2100-01-01 23:25">오후 11:25</time>
-                            <h6 class="departure-location">NYC</h6>
+                    </div>
+                    <div class="row-arrival-flight">
+                        <div class="timeline-flight">
+                            <div class="departure-time">
+                                <time datetime="2100-01-10 16:10">오후 04:10</time>
+                                <h6 class="departure-location">NYC</h6>
+                            </div>
+                            <ul class="bar-flight">
+                                <li class="bar-flight-point">
+                                    <i class="material-icons">flight</i>
+                                </li>
+                                <li class="flight-time">09시간 15분</li>
+                            </ul>
+                            <div class="arrival-time">
+                                <time datetime="2100-01-11 01:25">오후 11:25</time>
+                                <h6 class="departure-location">ICN</h6>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row-arrival-flight">
-                    <div class="timeline-flight">
-                        <div class="departure-time">
-                            <time datetime="2100-01-01 14:10">오후 02:10</time>
-                            <h6 class="departure-location">ICN</h6>
+                <div class="price-info-group col-12 col-md-3">
+                    <h6 class="total-traveller">총 인원 2명</h6>
+                    <h4 class="flight-price">₩370,000</h4>
+                    <button class="btn btn-block btn-danger btn-sm btn-refund" data-toggle="modal" data-target="#modal-refund">환불 하기</button>
+                    <h6 class="noti-refund-message">370,000원이 환불 되었습니다.</h6>
+                </div>
+            </li>
+            <li class="list-flight-item complete">
+                <div class="flight-info-group col-12 col-md-9">
+                    <h6 class="flight-name">인천(ICN) <span><i class="material-icons">swap_horiz</i></span> 뉴욕(NYC)</h6>
+                    <div class="row-departure-flight">
+                        <div class="timeline-flight">
+                            <div class="departure-time">
+                                <time datetime="2100-01-01 14:10">오후 02:10</time>
+                                <h6 class="departure-location">ICN</h6>
+                            </div>
+                            <ul class="bar-flight">
+                                <li class="bar-flight-point">
+                                    <i class="material-icons">flight</i>
+                                </li>
+                                <li class="flight-time">09시간 15분</li>
+                            </ul>
+                            <div class="arrival-time">
+                                <time datetime="2100-01-01 23:25">오후 11:25</time>
+                                <h6 class="departure-location">NYC</h6>
+                            </div>
                         </div>
-                        <ul class="bar-flight">
-                            <li class="bar-flight-point">
-                                <i class="material-icons">flight</i>
-                            </li>
-                            <li class="flight-time">09시간 15분</li>
-                        </ul>
-                        <div class="arrival-time">
-                            <time datetime="2100-01-01 23:25">오후 11:25</time>
-                            <h6 class="departure-location">NYC</h6>
+                    </div>
+                    <div class="row-arrival-flight">
+                        <div class="timeline-flight">
+                            <div class="departure-time">
+                                <time datetime="2100-01-10 16:10">오후 04:10</time>
+                                <h6 class="departure-location">NYC</h6>
+                            </div>
+                            <ul class="bar-flight">
+                                <li class="bar-flight-point">
+                                    <i class="material-icons">flight</i>
+                                </li>
+                                <li class="flight-time">09시간 15분</li>
+                            </ul>
+                            <div class="arrival-time">
+                                <time datetime="2100-01-11 01:25">오후 11:25</time>
+                                <h6 class="departure-location">ICN</h6>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="price-info-group col-12 col-md-3">
-                <h6 class="total-traveller">총 인원 2명</h6>
-                <h4 class="flight-price">₩370,000</h4>
-                <button class="btn btn-block btn-danger btn-sm btn-refund" data-toggle="modal" data-target="#modal-refund">환불(100%)</button>
-                <h6 class="noti-refund-message">100%(370,000원) 환불 되었습니다.</h6>
-            </div>
-        </li>
-        <li class="list-flight-item">
-            <div class="flight-info-group col-12 col-md-9">
-                <h6 class="flight-name">인천(ICN) -> 뉴욕(NYC)</h6>
-                <div class="row-departure-flight">
-                    <div class="timeline-flight">
-                        <div class="departure-time">
-                            <time datetime="2100-01-01 14:10">오후 02:10</time>
-                            <h6 class="departure-location">ICN</h6>
+                <div class="price-info-group col-12 col-md-3">
+                    <h6 class="total-traveller">총 인원 2명</h6>
+                    <h4 class="flight-price">₩370,000</h4>
+                    <button class="btn btn-block btn-danger btn-sm btn-refund" data-toggle="modal" data-target="#modal-refund">환불 하기</button>
+                </div>
+            </li>
+            <li class="list-flight-item">
+                <div class="flight-info-group col-12 col-md-9">
+                    <h6 class="flight-name">인천(ICN) <span><i class="material-icons">swap_horiz</i></span> 뉴욕(NYC)</h6>
+                    <div class="row-departure-flight">
+                        <div class="timeline-flight">
+                            <div class="departure-time">
+                                <time datetime="2100-01-01 14:10">오후 02:10</time>
+                                <h6 class="departure-location">ICN</h6>
+                            </div>
+                            <ul class="bar-flight">
+                                <li class="bar-flight-point">
+                                    <i class="material-icons">flight</i>
+                                </li>
+                                <li class="flight-time">09시간 15분</li>
+                            </ul>
+                            <div class="arrival-time">
+                                <time datetime="2100-01-01 23:25">오후 11:25</time>
+                                <h6 class="departure-location">NYC</h6>
+                            </div>
                         </div>
-                        <ul class="bar-flight">
-                            <li class="bar-flight-point">
-                                <i class="material-icons">flight</i>
-                            </li>
-                            <li class="flight-time">09시간 15분</li>
-                        </ul>
-                        <div class="arrival-time">
-                            <time datetime="2100-01-01 23:25">오후 11:25</time>
-                            <h6 class="departure-location">NYC</h6>
+                    </div>
+                    <div class="row-arrival-flight">
+                        <div class="timeline-flight">
+                            <div class="departure-time">
+                                <time datetime="2100-01-10 16:10">오후 04:10</time>
+                                <h6 class="departure-location">NYC</h6>
+                            </div>
+                            <ul class="bar-flight">
+                                <li class="bar-flight-point">
+                                    <i class="material-icons">flight</i>
+                                </li>
+                                <li class="flight-time">09시간 15분</li>
+                            </ul>
+                            <div class="arrival-time">
+                                <time datetime="2100-01-11 01:25">오후 11:25</time>
+                                <h6 class="departure-location">ICN</h6>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row-arrival-flight">
-                    <div class="timeline-flight">
-                        <div class="departure-time">
-                            <time datetime="2100-01-01 14:10">오후 02:10</time>
-                            <h6 class="departure-location">ICN</h6>
+                <div class="price-info-group col-12 col-md-3">
+                    <h6 class="total-traveller">총 인원 2명</h6>
+                    <h4 class="flight-price">₩370,000</h4>
+                    <button class="btn btn-block btn-danger btn-sm btn-refund" data-toggle="modal" data-target="#modal-refund">환불 하기</button>
+                </div>
+            </li>
+            <li class="list-flight-item refund">
+                <div class="flight-info-group col-12 col-md-9">
+                    <h6 class="flight-name">인천(ICN) <span><i class="material-icons">swap_horiz</i></span> 뉴욕(NYC)</h6>
+                    <div class="row-departure-flight">
+                        <div class="timeline-flight">
+                            <div class="departure-time">
+                                <time datetime="2100-01-01 14:10">오후 02:10</time>
+                                <h6 class="departure-location">ICN</h6>
+                            </div>
+                            <ul class="bar-flight">
+                                <li class="bar-flight-point">
+                                    <i class="material-icons">flight</i>
+                                </li>
+                                <li class="flight-time">09시간 15분</li>
+                            </ul>
+                            <div class="arrival-time">
+                                <time datetime="2100-01-01 23:25">오후 11:25</time>
+                                <h6 class="departure-location">NYC</h6>
+                            </div>
                         </div>
-                        <ul class="bar-flight">
-                            <li class="bar-flight-point">
-                                <i class="material-icons">flight</i>
-                            </li>
-                            <li class="flight-time">09시간 15분</li>
-                        </ul>
-                        <div class="arrival-time">
-                            <time datetime="2100-01-01 23:25">오후 11:25</time>
-                            <h6 class="departure-location">NYC</h6>
+                    </div>
+                    <div class="row-arrival-flight">
+                        <div class="timeline-flight">
+                            <div class="departure-time">
+                                <time datetime="2100-01-10 16:10">오후 04:10</time>
+                                <h6 class="departure-location">NYC</h6>
+                            </div>
+                            <ul class="bar-flight">
+                                <li class="bar-flight-point">
+                                    <i class="material-icons">flight</i>
+                                </li>
+                                <li class="flight-time">09시간 15분</li>
+                            </ul>
+                            <div class="arrival-time">
+                                <time datetime="2100-01-11 01:25">오후 11:25</time>
+                                <h6 class="departure-location">ICN</h6>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="price-info-group col-12 col-md-3">
-                <h6 class="total-traveller">총 인원 2명</h6>
-                <h4 class="flight-price">₩370,000</h4>
-                <button class="btn btn-block btn-danger btn-sm btn-refund" data-toggle="modal" data-target="#modal-refund">환불(100%)</button>
-                <button class="btn btn-block btn-danger btn-sm btn-refund" data-toggle="modal" data-target="#modal-refund">환불(50%)</button>
-                <button class="btn btn-block btn-danger btn-sm btn-refund" data-toggle="modal" data-target="#modal-refund">환불(10%)</button>
-            </div>
-        </li>
-        <li class="list-flight-item">
-            <div class="flight-info-group col-12 col-md-9">
-                <h6 class="flight-name">인천(ICN) -> 뉴욕(NYC)</h6>
-                <div class="row-departure-flight">
-                    <div class="timeline-flight">
-                        <div class="departure-time">
-                            <time datetime="2100-01-01 14:10">오후 02:10</time>
-                            <h6 class="departure-location">ICN</h6>
+                <div class="price-info-group col-12 col-md-3">
+                    <h6 class="total-traveller">총 인원 2명</h6>
+                    <h4 class="flight-price">₩370,000</h4>
+                    <button class="btn btn-block btn-danger btn-sm btn-refund" data-toggle="modal" data-target="#modal-refund">환불 하기</button>
+                    <h6 class="noti-refund-message">370,000원이 환불 되었습니다.</h6>
+                </div>
+            </li>
+            <li class="list-flight-item refund">
+                <div class="flight-info-group col-12 col-md-9">
+                    <h6 class="flight-name">인천(ICN) <span><i class="material-icons">swap_horiz</i></span> 뉴욕(NYC)</h6>
+                    <div class="row-departure-flight">
+                        <div class="timeline-flight">
+                            <div class="departure-time">
+                                <time datetime="2100-01-01 14:10">오후 02:10</time>
+                                <h6 class="departure-location">ICN</h6>
+                            </div>
+                            <ul class="bar-flight">
+                                <li class="bar-flight-point">
+                                    <i class="material-icons">flight</i>
+                                </li>
+                                <li class="flight-time">09시간 15분</li>
+                            </ul>
+                            <div class="arrival-time">
+                                <time datetime="2100-01-01 23:25">오후 11:25</time>
+                                <h6 class="departure-location">NYC</h6>
+                            </div>
                         </div>
-                        <ul class="bar-flight">
-                            <li class="bar-flight-point">
-                                <i class="material-icons">flight</i>
-                            </li>
-                            <li class="flight-time">09시간 15분</li>
-                        </ul>
-                        <div class="arrival-time">
-                            <time datetime="2100-01-01 23:25">오후 11:25</time>
-                            <h6 class="departure-location">NYC</h6>
+                    </div>
+                    <div class="row-arrival-flight">
+                        <div class="timeline-flight">
+                            <div class="departure-time">
+                                <time datetime="2100-01-10 16:10">오후 04:10</time>
+                                <h6 class="departure-location">NYC</h6>
+                            </div>
+                            <ul class="bar-flight">
+                                <li class="bar-flight-point">
+                                    <i class="material-icons">flight</i>
+                                </li>
+                                <li class="flight-time">09시간 15분</li>
+                            </ul>
+                            <div class="arrival-time">
+                                <time datetime="2100-01-11 01:25">오후 11:25</time>
+                                <h6 class="departure-location">ICN</h6>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row-arrival-flight">
-                    <div class="timeline-flight">
-                        <div class="departure-time">
-                            <time datetime="2100-01-01 14:10">오후 02:10</time>
-                            <h6 class="departure-location">ICN</h6>
+                <div class="price-info-group col-12 col-md-3">
+                    <h6 class="total-traveller">총 인원 2명</h6>
+                    <h4 class="flight-price">₩370,000</h4>
+                    <button class="btn btn-block btn-danger btn-sm btn-refund" data-toggle="modal" data-target="#modal-refund">환불 하기</button>
+                    <h6 class="noti-refund-message">370,000원이 환불 되었습니다.</h6>
+                </div>
+            </li>
+            <li class="list-flight-item refund">
+                <div class="flight-info-group col-12 col-md-9">
+                    <h6 class="flight-name">인천(ICN) <span><i class="material-icons">swap_horiz</i></span> 뉴욕(NYC)</h6>
+                    <div class="row-departure-flight">
+                        <div class="timeline-flight">
+                            <div class="departure-time">
+                                <time datetime="2100-01-01 14:10">오후 02:10</time>
+                                <h6 class="departure-location">ICN</h6>
+                            </div>
+                            <ul class="bar-flight">
+                                <li class="bar-flight-point">
+                                    <i class="material-icons">flight</i>
+                                </li>
+                                <li class="flight-time">09시간 15분</li>
+                            </ul>
+                            <div class="arrival-time">
+                                <time datetime="2100-01-01 23:25">오후 11:25</time>
+                                <h6 class="departure-location">NYC</h6>
+                            </div>
                         </div>
-                        <ul class="bar-flight">
-                            <li class="bar-flight-point">
-                                <i class="material-icons">flight</i>
-                            </li>
-                            <li class="flight-time">09시간 15분</li>
-                        </ul>
-                        <div class="arrival-time">
-                            <time datetime="2100-01-01 23:25">오후 11:25</time>
-                            <h6 class="departure-location">NYC</h6>
+                    </div>
+                    <div class="row-arrival-flight">
+                        <div class="timeline-flight">
+                            <div class="departure-time">
+                                <time datetime="2100-01-10 16:10">오후 04:10</time>
+                                <h6 class="departure-location">NYC</h6>
+                            </div>
+                            <ul class="bar-flight">
+                                <li class="bar-flight-point">
+                                    <i class="material-icons">flight</i>
+                                </li>
+                                <li class="flight-time">09시간 15분</li>
+                            </ul>
+                            <div class="arrival-time">
+                                <time datetime="2100-01-11 01:25">오후 11:25</time>
+                                <h6 class="departure-location">ICN</h6>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="price-info-group col-12 col-md-3">
-                <h6 class="total-traveller">총 인원 2명</h6>
-                <h4 class="flight-price">₩370,000</h4>
-                <button class="btn btn-block btn-danger btn-sm btn-refund" data-toggle="modal" data-target="#modal-refund">환불(100%)</button>
-                <button class="btn btn-block btn-danger btn-sm btn-refund" data-toggle="modal" data-target="#modal-refund">환불(50%)</button>
-                <button class="btn btn-block btn-danger btn-sm btn-refund" data-toggle="modal" data-target="#modal-refund">환불(10%)</button>
-            </div>
-        </li>
-        <li class="list-flight-item disabled">
-            <div class="flight-info-group col-12 col-md-9">
-                <h6 class="flight-name">인천(ICN) -> 뉴욕(NYC)</h6>
-                <div class="row-departure-flight">
-                    <div class="timeline-flight">
-                        <div class="departure-time">
-                            <time datetime="2100-01-01 14:10">오후 02:10</time>
-                            <h6 class="departure-location">ICN</h6>
+                <div class="price-info-group col-12 col-md-3">
+                    <h6 class="total-traveller">총 인원 2명</h6>
+                    <h4 class="flight-price">₩370,000</h4>
+                    <button class="btn btn-block btn-danger btn-sm btn-refund" data-toggle="modal" data-target="#modal-refund">환불 하기</button>
+                </div>
+            </li>
+            <li class="list-flight-item">
+                <div class="flight-info-group col-12 col-md-9">
+                    <h6 class="flight-name">인천(ICN) -> 뉴욕(NYC)</h6>
+                    <div class="row-departure-flight">
+                        <div class="timeline-flight">
+                            <div class="departure-time">
+                                <time datetime="2100-01-01 14:10">오후 02:10</time>
+                                <h6 class="departure-location">ICN</h6>
+                            </div>
+                            <ul class="bar-flight">
+                                <li class="bar-flight-point">
+                                    <i class="material-icons">flight</i>
+                                </li>
+                                <li class="flight-time">09시간 15분</li>
+                            </ul>
+                            <div class="arrival-time">
+                                <time datetime="2100-01-01 23:25">오후 11:25</time>
+                                <h6 class="departure-location">NYC</h6>
+                            </div>
                         </div>
-                        <ul class="bar-flight">
-                            <li class="bar-flight-point">
-                                <i class="material-icons">flight</i>
-                            </li>
-                            <li class="flight-time">09시간 15분</li>
-                        </ul>
-                        <div class="arrival-time">
-                            <time datetime="2100-01-01 23:25">오후 11:25</time>
-                            <h6 class="departure-location">NYC</h6>
+                    </div>
+                    <div class="row-arrival-flight">
+                        <div class="timeline-flight">
+                            <div class="departure-time">
+                                <time datetime="2100-01-10 16:10">오후 04:10</time>
+                                <h6 class="departure-location">NYC</h6>
+                            </div>
+                            <ul class="bar-flight">
+                                <li class="bar-flight-point">
+                                    <i class="material-icons">flight</i>
+                                </li>
+                                <li class="flight-time">09시간 15분</li>
+                            </ul>
+                            <div class="arrival-time">
+                                <time datetime="2100-01-11 01:25">오후 11:25</time>
+                                <h6 class="departure-location">ICN</h6>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row-arrival-flight">
-                    <div class="timeline-flight">
-                        <div class="departure-time">
-                            <time datetime="2100-01-01 14:10">오후 02:10</time>
-                            <h6 class="departure-location">ICN</h6>
-                        </div>
-                        <ul class="bar-flight">
-                            <li class="bar-flight-point">
-                                <i class="material-icons">flight</i>
-                            </li>
-                            <li class="flight-time">09시간 15분</li>
-                        </ul>
-                        <div class="arrival-time">
-                            <time datetime="2100-01-01 23:25">오후 11:25</time>
-                            <h6 class="departure-location">NYC</h6>
-                        </div>
-                    </div>
+                <div class="price-info-group col-12 col-md-3">
+                    <h6 class="total-traveller">총 인원 2명</h6>
+                    <h4 class="flight-price">₩370,000</h4>
+                    <button class="btn btn-block btn-danger btn-sm btn-refund" data-toggle="modal" data-target="#modal-refund">환불 하기</button>
                 </div>
-            </div>
-            <div class="price-info-group col-12 col-md-3">
-                <h6 class="total-traveller">총 인원 2명</h6>
-                <h4 class="flight-price">₩370,000</h4>
-                <button class="btn btn-block btn-danger btn-sm btn-refund" data-toggle="modal" data-target="#modal-refund">환불(50%)</button>
-                <h6 class="noti-refund-message">50%(185,000원) 환불 되었습니다.</h6>
-            </div>
-        </li>
-        <li class="list-flight-item disabled">
-            <div class="flight-info-group col-12 col-md-9">
-                <h6 class="flight-name">인천(ICN) -> 뉴욕(NYC)</h6>
-                <div class="row-departure-flight">
-                    <div class="timeline-flight">
-                        <div class="departure-time">
-                            <time datetime="2100-01-01 14:10">오후 02:10</time>
-                            <h6 class="departure-location">ICN</h6>
-                        </div>
-                        <ul class="bar-flight">
-                            <li class="bar-flight-point">
-                                <i class="material-icons">flight</i>
-                            </li>
-                            <li class="flight-time">09시간 15분</li>
-                        </ul>
-                        <div class="arrival-time">
-                            <time datetime="2100-01-01 23:25">오후 11:25</time>
-                            <h6 class="departure-location">NYC</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="row-arrival-flight">
-                    <div class="timeline-flight">
-                        <div class="departure-time">
-                            <time datetime="2100-01-01 14:10">오후 02:10</time>
-                            <h6 class="departure-location">ICN</h6>
-                        </div>
-                        <ul class="bar-flight">
-                            <li class="bar-flight-point">
-                                <i class="material-icons">flight</i>
-                            </li>
-                            <li class="flight-time">09시간 15분</li>
-                        </ul>
-                        <div class="arrival-time">
-                            <time datetime="2100-01-01 23:25">오후 11:25</time>
-                            <h6 class="departure-location">NYC</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="price-info-group col-12 col-md-3">
-                <h6 class="total-traveller">총 인원 2명</h6>
-                <h4 class="flight-price">₩370,000</h4>
-                <button class="btn btn-block btn-danger btn-sm btn-refund" data-toggle="modal" data-target="#modal-refund">환불(10%)</button>
-                <h6 class="noti-refund-message">10%(37,000원) 환불 되었습니다.</h6>
-            </div>
-        </li>
-        <li class="list-flight-item">
-            <div class="flight-info-group col-12 col-md-9">
-                <h6 class="flight-name">인천(ICN) -> 뉴욕(NYC)</h6>
-                <div class="row-departure-flight">
-                    <div class="timeline-flight">
-                        <div class="departure-time">
-                            <time datetime="2100-01-01 14:10">오후 02:10</time>
-                            <h6 class="departure-location">ICN</h6>
-                        </div>
-                        <ul class="bar-flight">
-                            <li class="bar-flight-point">
-                                <i class="material-icons">flight</i>
-                            </li>
-                            <li class="flight-time">09시간 15분</li>
-                        </ul>
-                        <div class="arrival-time">
-                            <time datetime="2100-01-01 23:25">오후 11:25</time>
-                            <h6 class="departure-location">NYC</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="row-arrival-flight">
-                    <div class="timeline-flight">
-                        <div class="departure-time">
-                            <time datetime="2100-01-01 14:10">오후 02:10</time>
-                            <h6 class="departure-location">ICN</h6>
-                        </div>
-                        <ul class="bar-flight">
-                            <li class="bar-flight-point">
-                                <i class="material-icons">flight</i>
-                            </li>
-                            <li class="flight-time">09시간 15분</li>
-                        </ul>
-                        <div class="arrival-time">
-                            <time datetime="2100-01-01 23:25">오후 11:25</time>
-                            <h6 class="departure-location">NYC</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="price-info-group col-12 col-md-3">
-                <h6 class="total-traveller">총 인원 2명</h6>
-                <h4 class="flight-price">₩370,000</h4>
-                <button class="btn btn-block btn-danger btn-sm btn-refund" data-toggle="modal" data-target="#modal-refund">환불(100%)</button>
-                <button class="btn btn-block btn-danger btn-sm btn-refund" data-toggle="modal" data-target="#modal-refund">환불(50%)</button>
-                <button class="btn btn-block btn-danger btn-sm btn-refund" data-toggle="modal" data-target="#modal-refund">환불(10%)</button>
-            </div>
-        </li>
-        <li class="list-flight-item">
-            <div class="flight-info-group col-12 col-md-9">
-                <h6 class="flight-name">인천(ICN) -> 뉴욕(NYC)</h6>
-                <div class="row-departure-flight">
-                    <div class="timeline-flight">
-                        <div class="departure-time">
-                            <time datetime="2100-01-01 14:10">오후 02:10</time>
-                            <h6 class="departure-location">ICN</h6>
-                        </div>
-                        <ul class="bar-flight">
-                            <li class="bar-flight-point">
-                                <i class="material-icons">flight</i>
-                            </li>
-                            <li class="flight-time">09시간 15분</li>
-                        </ul>
-                        <div class="arrival-time">
-                            <time datetime="2100-01-01 23:25">오후 11:25</time>
-                            <h6 class="departure-location">NYC</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="row-arrival-flight">
-                    <div class="timeline-flight">
-                        <div class="departure-time">
-                            <time datetime="2100-01-01 14:10">오후 02:10</time>
-                            <h6 class="departure-location">ICN</h6>
-                        </div>
-                        <ul class="bar-flight">
-                            <li class="bar-flight-point">
-                                <i class="material-icons">flight</i>
-                            </li>
-                            <li class="flight-time">09시간 15분</li>
-                        </ul>
-                        <div class="arrival-time">
-                            <time datetime="2100-01-01 23:25">오후 11:25</time>
-                            <h6 class="departure-location">NYC</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="price-info-group col-12 col-md-3">
-                <h6 class="total-traveller">총 인원 2명</h6>
-                <h4 class="flight-price">₩370,000</h4>
-                <button class="btn btn-block btn-danger btn-sm btn-refund" data-toggle="modal" data-target="#modal-refund">환불(100%)</button>
-                <button class="btn btn-block btn-danger btn-sm btn-refund" data-toggle="modal" data-target="#modal-refund">환불(50%)</button>
-                <button class="btn btn-block btn-danger btn-sm btn-refund" data-toggle="modal" data-target="#modal-refund">환불(10%)</button>
-            </div>
-        </li>
-    </ul>
+            </li>
+        </ul>
+    </div>
 </div>
 
 <!--처음 예약 내역이 없을 경우에 아래 container의 display: none을 해제해주세요-->
