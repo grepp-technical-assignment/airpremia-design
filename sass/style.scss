@@ -52,14 +52,10 @@ body {
 a {
   transition: .3s;
 
-  &:hover {
-    text-decoration: none;
-  }
+  &:hover { text-decoration: none; }
 }
 
-select {
-  cursor: pointer;
-}
+select { cursor: pointer; }
 
 .btn {
   font-weight: 600;
@@ -99,10 +95,6 @@ select {
   }
 }
 
-.text-muted {
-  color: $color-text—secondary !important;
-}
-
 .form-group {
   margin-bottom: 12px;
 
@@ -114,18 +106,9 @@ select {
 }
 
 .form-control {
-  &::placeholder {
-    color: $color-text—disabled;
-  }
-}
-
-.form-check-label {
-  cursor: pointer;
-  line-height: 1;
-}
-
-.form-control {
   border-color: $color-border;
+
+  &::placeholder { color: $color-text—disabled; }
 }
 
 footer {
@@ -144,11 +127,7 @@ footer {
   border-bottom: 1px solid $color-border;
   padding-top: 12px;
   padding-bottom: 12px;
-
-  .navbar-brand { display: inline-flex; }
 }
-
-.navbar-nav { flex-direction: row; }
 
 .nav-item {
   .nav-link {
@@ -173,6 +152,8 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
+
+  @media(max-width: 575.98px) { padding: 40px 0; }
 }
 
 .form-group-wrap {
@@ -196,7 +177,7 @@ footer {
 
   .list-flight-title {
     margin-top: 56px;
-    @include h4;
+    @include h5;
     line-height: 1.4;
     color: $color-text—primary;
 
@@ -322,8 +303,7 @@ footer {
   }
 
   .total-traveller,
-  .total-flight-price,
-  .noti-refund-message {
+  .total-flight-price {
     @include h7;
     color: $color-text—secondary;
     font-weight: 400;
@@ -333,7 +313,6 @@ footer {
   .flight-price { margin-bottom: 0; }
 
   .total-flight-price { margin-bottom: 16px; }
-  .noti-refund-message { margin-top: 4px; }
 
   @media(max-width: 991.98px) {
     .flight-info-group,
@@ -350,10 +329,7 @@ footer {
   }
 
   @media(max-width: 575.98px) {
-    .list-flight-title {
-      @include h5;
-      text-align: center;
-    }
+    .list-flight-title { text-align: center; }
 
     .departure-time,
     .arrival-time {

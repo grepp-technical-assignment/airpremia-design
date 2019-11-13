@@ -50,9 +50,6 @@ select {
     background-color: #d7461d !important;
     border-color: #d7461d !important; }
 
-.text-muted {
-  color: #9a9a9a !important; }
-
 .form-group {
   margin-bottom: 12px; }
   .form-group > label {
@@ -60,15 +57,10 @@ select {
     font-size: 13px;
     margin-bottom: 2px; }
 
-.form-control::placeholder {
-  color: #CDD7E0; }
-
-.form-check-label {
-  cursor: pointer;
-  line-height: 1; }
-
 .form-control {
   border-color: #e7e7e7; }
+  .form-control::placeholder {
+    color: #CDD7E0; }
 
 footer {
   padding: 64px 0;
@@ -86,11 +78,6 @@ footer {
   border-bottom: 1px solid #e7e7e7;
   padding-top: 12px;
   padding-bottom: 12px; }
-  .nav-global .navbar-brand {
-    display: inline-flex; }
-
-.navbar-nav {
-  flex-direction: row; }
 
 .nav-item .nav-link + .nav-link {
   margin-left: 16px; }
@@ -111,6 +98,9 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%; }
+  @media (max-width: 575.98px) {
+    .container-search {
+      padding: 40px 0; } }
 
 .form-group-wrap {
   padding: 32px;
@@ -129,8 +119,8 @@ footer {
   .container-flight .list-flight-title,
   .container-reservation .list-flight-title {
     margin-top: 56px;
-    font-size: 26px;
-    line-height: 1.2;
+    font-size: 20px;
+    line-height: 1.6;
     line-height: 1.4;
     color: #363636; }
     .container-flight .list-flight-title i,
@@ -263,10 +253,8 @@ footer {
       color: #9a9a9a; }
   .container-flight .total-traveller,
   .container-flight .total-flight-price,
-  .container-flight .noti-refund-message,
   .container-reservation .total-traveller,
-  .container-reservation .total-flight-price,
-  .container-reservation .noti-refund-message {
+  .container-reservation .total-flight-price {
     font-size: 13px;
     line-height: 1.6;
     color: #9a9a9a;
@@ -279,9 +267,6 @@ footer {
   .container-flight .total-flight-price,
   .container-reservation .total-flight-price {
     margin-bottom: 16px; }
-  .container-flight .noti-refund-message,
-  .container-reservation .noti-refund-message {
-    margin-top: 4px; }
   @media (max-width: 991.98px) {
     .container-flight .flight-info-group,
     .container-flight .price-info-group,
@@ -302,8 +287,6 @@ footer {
   @media (max-width: 575.98px) {
     .container-flight .list-flight-title,
     .container-reservation .list-flight-title {
-      font-size: 20px;
-      line-height: 1.6;
       text-align: center; }
     .container-flight .departure-time,
     .container-flight .arrival-time,
